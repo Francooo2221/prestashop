@@ -25,4 +25,5 @@ Projekt obejmuje:
 - Zarządzanie bazą danych MySQL i przygotowywanie skryptów inicjalizujących sklep.  
 - Tworzenie i utrzymywanie Infrastructure as Code (IaC) dla aplikacji konteneryzowanej.  
 - Podstawy bezpieczeństwa przy pracy z kontenerami i certyfikatami SSL.  
-- Organizacja repozytorium, wersjonowanie kodu i współpraca zespołowa przy projekcie.  
+- Organizacja repozytorium, wersjonowanie kodu i współpraca zespołowa przy projekcie.
+- Automatyzacja procesów CI/CD z GitHub Actions
