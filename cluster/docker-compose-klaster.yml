@@ -1,0 +1,38 @@
+services:
+  prestashop:
+    image: francoo21/be_198013
+    
+    networks:
+      - mysql_network
+
+    ports:
+      - target: 80
+        published: 19801
+        mode: host
+
+
+    environment:
+      - DB_SERVER=admin-mysql_db
+      - DB_USER=root
+      - DB_PASSWD=student
+      - DB_NAME=BE_198013
+      - PS_INSTALL_AUTO=0
+      - PS_DEV_MODE=1
+
+
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          cpus: "2.0"
+          memory: 2.0G
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+         - node.hostname == student-swarm01
+
+networks:
+  mysql_network:
+    external: true
+    name: admin-mysql_default

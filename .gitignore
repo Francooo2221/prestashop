@@ -1,0 +1,77 @@
+# ------------------------------
+# Python
+# ------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pytest_cache/
+*.coverage
+*.egg-info/
+dist/
+build/
+venv/
+*Zone.Identifier
+
+# ------------------------------
+# Selenium / Test Automation
+# ------------------------------
+.vscode/
+*.log
+*.db
+*.sqlite3
+
+# ------------------------------
+# macOS
+# ------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ------------------------------
+# Docker / Docker Swarm
+# ------------------------------
+*.env
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.override.*
+*.swarm
+*.secret
+*.log
+tmp/
+node_modules/
+.cache/
+
+# ------------------------------
+# Prestashop
+# ------------------------------
+/var/
+/vendor/
+/app/cache/
+/app/logs/
+/img/tmp/
+/upload/
+/download/
+/config/settings.inc.php
+/config/defines.inc.php
+/modules/*/vendor/
+modules/ps_*/*.zip
+*.zip
+*.sql
+*.tar.gz
+
+# ------------------------------
+# IDEs / Editors
+# ------------------------------
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+*.code-workspace
+
+# ------------------------------
+# Git
+# ------------------------------
+*.bak
+*.swp
+*.swo
