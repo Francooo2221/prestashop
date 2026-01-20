@@ -3,7 +3,7 @@ name: Build PrestaShop Image
 on:
   push:
     branches:
-      - "actions-test"
+      - "dev"
 
 jobs:
   build_and_push:
